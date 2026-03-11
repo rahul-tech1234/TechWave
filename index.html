@@ -4,7 +4,14 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>TechWave</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
         <link rel="stylesheet" href="styles/techwabe.css" />
     </head>
     <body class="inter_google_font">
@@ -14,18 +21,109 @@
                     Tech<span class="gradient_text">Wabe</span>
                 </h2>
                 <ul class="menu display_flex">
-                    <li class="list_item">
+                    <li class="list_item sm:visible invisible">
                         <a href="" class="list_item_link">About</a>
                     </li>
-                    <li class="list_item">
+                    <li class="list_item sm:visible invisible">
                         <a href="" class="list_item_link">Episodes</a>
                     </li>
-                    <li class="list_item">
+                    <li class="list_item sm:visible invisible">
                         <a href="" class="list_item_link">Host</a>
                     </li>
+
+                    <li class="list_item sm:invisible visible">
+                        <a href="" class="list_item_link"
+                            ><i class="fa-solid fa-bars"></i
+                        ></a>
+                    </li>
                 </ul>
-                <button class="primary_btn">Subscribe <i class="fa-solid fa-arrow-right-long"></i></button>
+
+                <button class="primary_btn sm:visible invisible">
+                    Subscribe <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
             </nav>
+            <div class="banner display_flex">
+                <div class="banner_img">
+                    <img src="assets/microphone.png" alt="" />
+                </div>
+                <div class="banner_context">
+                    <h2 class="heading">TechWave</h2>
+                    <p>
+                        Your daily dose of tech insights, productivity hacks,
+                        and personal growth
+                    </p>
+                    <button class="primary_btn">
+                        <i class="fa-brands fa-spotify"></i> Listen on Spotify</button
+                    ><button class="primary_btn bg_none">
+                        <i class="fa-regular fa-envelope"></i> Subscribe
+                    </button>
+                </div>
+            </div>
         </header>
+        <main>
+            <section class="w_1200">
+                <section class="about">
+                    <h3 class="section_title">About the Podcast</h3>
+                    <p class="about_info">
+                        TechWave is your go-to podcast for staying ahead in the
+                        fast-paced world of technology. We break down complex
+                        topics into digestible insights, explore productivity
+                        strategies that actually work, and share stories of
+                        personal growth from industry leaders. 
+                        <br /><br />
+                        Join thousands of young professionals and tech
+                        enthusiasts who start their day with TechWave.
+                    </p>
+                </section>
+                <section class="flex justify-evenly items-center border_t">
+                    <div class="">
+                        <h3 class="card_title">150K+</h3>
+                        <p>Monthly Listeners</p>
+                    </div>
+                    <div class="">
+                        <h3 class="card_title">200+</h3>
+                        <p>Episodes Published</p>
+                    </div>
+                    <div class="">
+                        <h3 class="card_title">4.9★</h3>
+                        <p>Average Rating</p>
+                    </div>
+                    <div class="">
+                        <h3 class="card_title">50+</h3>
+                        <p>Industry Experts</p>
+                    </div>
+                </section>
+                <section class="techwave">
+                    <h3 class="section_title">Why Choose TechWave</h3>
+                    <div class="techwabe_container">
+                        <div class="audio">
+                            <img src="assets/headphone.png" alt="">
+                            <h3 class="techwave_title">Premium Audio Quality</h3>
+                            <p class="techwabe_info">Experience crystal-clear sound with professional-grade recording equipment and expert audio engineering. Every episode is mastered for optimal listening across all devices and platforms.</p>
+                        </div>
+                        <div class="mobile">
+                            <img src="assets/device.png" alt="">
+                            <h3 class="techwave_title">Mobile Friendly</h3>
+                            <p class="techwabe_info">Listen on the go with seamless mobile experience and offline downloads.</p>
+                        </div>
+                        <div class="global">
+                            <img src="assets/location.png" alt="">
+                            <h3 class="techwave_title">Global Community</h3>
+                            <p class="techwabe_info">Connect with tech enthusiasts from over 120 countries worldwide.</p>
+                        </div>
+                        <div class="interview">
+                            <img src="assets/headphone.png" alt="">
+                            <h3 class="techwave_title">Exclusive Interviews</h3>
+                            <p class="techwabe_info">Get unprecedented access to industry titans, startup founders, and tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving deep into their journeys, failures, and success strategies.</p>
+                        </div>
+                        <div class="resources">
+                            <img src="assets/resource.png" alt="">
+                            <h3 class="techwave_title">Rich Resources</h3>
+                            <p class="techwabe_info">Access show notes, transcripts, and additional learning materials for every episode.</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
     </body>
 </html>
