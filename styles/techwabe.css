@@ -30,6 +30,10 @@ a{
     font-size: 1rem;
     font-weight: 500;
     color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.primary_btn:hover{
+    transform: scale(1.5);
 }
 .heading {
     padding: 1.875rem 0;
@@ -72,12 +76,10 @@ iframe{
 /* header rerlative style */
 header {
     background-color: #2A186C;
-    background-image: url("../assets/hero-circle.png"), url("../assets/hero-bg.png");
-    background-position: 59.1% 97px, 0 0;
-    background-size: 300px 300px, cover;
-    background-repeat: no-repeat;
+    background: url("../assets/hero-circle.png") no-repeat 50% 28% /280px 280px, url("../assets/hero-bg.png") no-repeat top left / 100% 100%;
     padding-bottom: 70px;
 }
+
 .header_top_part{
     max-width: 1200;
     width: 75%;
@@ -85,6 +87,7 @@ header {
     justify-content: space-between;
     align-items: center;
     color: #fff;
+    background-color: #1A0B2E;
 }
 .logo_title{
     font-size: 2rem;
@@ -102,20 +105,29 @@ header {
 
 /* banner related style */
 .banner{
-    /* position: relative; */
+    position: relative;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
     padding: 3rem 0 50px 0;
-    gap: 136px;
+    gap: 100px;
+}
+.banner_img::after {
+    content: "NEW";
+    color: #000;
+    display: inline-block;
+    position: absolute;
+    top: 10%;
+    right: 42%;
+    background-color: #00FF88;
+    padding: 8px 16px;
+    border-radius: 12rem;
 }
 .banner_img {
-    margin-left: 14%;
+    margin-top: 4rem;
 }
-.banner_context{
-    margin-left: 9%;
-}
+
 .banner_context p{
     color: #fff;
     margin-bottom: 24px;
@@ -283,6 +295,13 @@ footer{
     margin-top: 16px;
     margin-bottom: 32px;
 }
+.visible {
+    visibility: visible;
+}
+
+.fa-bars {
+    visibility: hidden;
+}
 @media screen and (max-width: 576px) {
 header {
     background-color: #2A186C;
@@ -290,6 +309,22 @@ header {
     background-position: 59.1% 97px, 0 0;
     background-size: 300px 300px, cover;
     background-repeat: no-repeat;
+}
+
+.visible {
+    visibility: hidden;
+}
+
+.fa-bars {
+    visibility: visible;
+}
+.banner_img::after {
+    top: 0;
+    right: 20%;
+    
+}
+.banner_img {
+    margin-top: 0;
 }
 .card_container{
     grid-template-columns: repeat(2 ,1fr);
